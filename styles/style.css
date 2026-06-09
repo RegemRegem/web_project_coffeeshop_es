@@ -1,0 +1,100 @@
+body {
+  min-width: 1100px;
+  max-width: 1600px;
+  margin: 0 auto;
+  font-family: "Inter", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+}
+header {
+  background-color: #ffffff;
+  background-image: url("background_header.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  min-height: 720px;
+  max-height: 800px;
+  height: 100vh;
+  padding: 30px 183px 0 183px;
+  position: relative;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+.header-top {
+  display: flex;
+  align-items: center; /* alinea verticalmente logo y nav */
+  justify-content: space-between; /* LOGO a la izquierda — NAV a la derecha */
+  margin-top: 40px;
+}
+.header__logo {
+  position: relative;
+  left: -30px; /* desplaza el logo hacia la izquierda */
+  width: 105px; /* tamaño del brief */
+  height: 39px;
+}
+.nav-links {
+  display: flex;
+  gap: 30px;
+  margin-top: 30px;
+  list-style: none;
+}
+
+.nav-link {
+  font-family: "Inter", Arial, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  text-decoration: none;
+  color: #000000;
+}
+.span-accent {
+  font-family: "Times New Roman", serif;
+  font-style: italic;
+  font-weight: normal;
+  font-size: 58px;
+  line-height: 72px;
+  color: #ff976b;
+  display: block;
+}
+.header-title {
+  padding-top: 20px;
+}
+
+.header-title span {
+  display: block;
+}
+.header-description {
+  font-family: "Inter", Arial, sans-serif;
+  font-size: 20px;
+  line-height: 26px;
+  max-width: 683px;
+  margin-top: 28px;
+}
+.header-image {
+  position: absolute;
+  right: 5px; /* 5px del borde derecho de la pantalla */
+  bottom: 120px; /* para que no se encime con la dirección */
+  width: 646px;
+  height: 520px;
+  object-fit: contain;
+}
+.header-info {
+  margin-top: auto; /* empuja el bloque hacia abajo */
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end; /* alinea dirección con la última línea del horario */
+  padding-bottom: 20px; /* pequeño espacio del borde inferior */
+}
+
+.header-hours {
+  margin-bottom: 0;
+}
+
+.info-text {
+  font-family: "Inter", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  margin-bottom: 5px;
+}
