@@ -98,3 +98,262 @@ header {
   line-height: 20px;
   margin-bottom: 5px;
 }
+/* ==========================================================================
+   3. SECCIÓN: RESERVA (RESERVATION)
+   ========================================================================== */
+
+.reservation {
+  background-color: #ffd6c5;
+  background-image: url("../img/background_reservation.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 100px 0 120px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.reservation__title {
+  font-family: "Inter", Arial, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 44px;
+  line-height: 52px;
+  color: #000000;
+  margin: 0 0 80px 0;
+  text-align: center;
+}
+
+.reservation__form {
+  width: 100%;
+  max-width: 385px;
+  box-sizing: border-box;
+}
+
+.reservation__fieldset {
+  border: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.reservation__input-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 32px;
+}
+
+.reservation__label {
+  font-family: "Inter", Arial, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: #000000;
+  margin-bottom: 8px;
+}
+
+.reservation__input {
+  width: 100%;
+  height: 68px;
+  background-color: #ffffff;
+  border: 1px solid #838383;
+  border-radius: 4px;
+  padding: 0 15px;
+  font-family: "Inter", Arial, sans-serif;
+  font-size: 20px;
+  line-height: 30px;
+  color: #000000;
+  box-sizing: border-box;
+}
+
+.reservation__input::placeholder {
+  color: #838383;
+}
+
+.reservation__button {
+  width: 100%;
+  height: 60px;
+  background-color: #e96e3a;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  font-family: "Inter", Arial, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  cursor: pointer;
+  margin-bottom: 32px;
+  transition: opacity 0.3s ease;
+}
+
+.reservation__label-checkbox {
+  display: flex;
+  align-items: center; /* Asegura que el texto esté exactamente al mismo nivel (alineado verticalmente) */
+  gap: 12px;           /* Distancia horizontal de 12px entre la casilla y el texto */
+  cursor: pointer;
+  position: relative;
+  user-select: none;   /* Evita que el texto se seleccione accidentalmente al hacer clic */
+}
+
+/* Ocultamos el checkbox nativo pero lo mantenemos accesible para los lectores de pantalla */
+.reservation__checkbox {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Creamos la casilla visual personalizada desde cero */
+.reservation__checkbox-custom {
+  width: 20px;          /* Dimensiones 20x20px requeridas */
+  height: 20px;
+  border: 1px solid #4f4f4f;
+  border-radius: 2px;   /* Radio de borde estricto de 2px */
+  background-color: #ffffff; /* Estado inicial (desmarcado) */
+  box-sizing: border-box;
+  display: inline-block;
+  transition: background 0.2s ease, border-color 0.2s ease;
+}
+
+/* ESTADO: Cuando el usuario hace clic (Checked) */
+.reservation__checkbox:checked ~ .reservation__checkbox-custom {
+  background-color: #2A2A2A;                /* Color de fondo oscuro cuando está activo */
+  border-color: #2A2A2A;
+  background-image: url("../img/check.svg"); /* Imagen del check requerida por el brief */
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 12px 12px;               /* Ajusta el tamaño del icono dentro del cuadro */
+}
+
+.reservation__checkbox-text {
+  font-family: "Inter", Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  color: #000000;
+}
+
+/* ==========================================================================
+   4. PIE DE PÁGINA (FOOTER)
+   ========================================================================== */
+
+.footer {
+  background-color: #d35722;
+  padding: 60px 183px;
+  position: relative;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.footer__circle {
+  position: absolute;
+  width: 340px;
+  height: 340px;
+  background-color: #e96e3a;
+  border-radius: 50%;
+  top: -128px;
+  left: -14px;
+  z-index: 1;
+}
+
+.footer__content {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 105px;
+}
+
+.footer__logo {
+  width: 105px;
+  height: 39px;
+}
+
+.footer__logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.footer__social {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__social-title {
+  font-family: "Inter", Arial, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+  margin: 0 0 20px 0;
+}
+
+.footer__social-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.footer__social-link {
+  font-family: "Inter", Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: color 0.3s ease;
+}
+
+.footer__social-icon {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+}
+
+.footer__copyright {
+  position: relative;
+  z-index: 2;
+  font-family: "Inter", Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+  margin: 0;
+}
+
+/* ==========================================================================
+   5. INTERACTIVIDAD: ESTADOS HOVER
+   ========================================================================== */
+
+.nav-link {
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #ff976b;
+}
+
+.reservation__button:hover {
+  opacity: 0.7;
+}
+
+.footer__social-link:hover {
+  color: #ffd6c5;
+}

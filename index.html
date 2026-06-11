@@ -64,8 +64,74 @@
       />
     </header>
 
-    <main class="content"></main>
+    <main class="content">
 
-    <footer class="footer"></footer>
+      <section class="reservation">
+        <h2 class="reservation__title">Reservar una mesa</h2>
+
+        <form class="reservation__form" action="#" method="POST">
+          <fieldset class="reservation__fieldset">
+
+            <div class="reservation__input-group">
+              <label class="reservation__label" for="nombre">Nombre *</label>
+              <input class="reservation__input" type="text" id="nombre" name="nombre" placeholder="Nombre" required />
+            </div>
+
+            <div class="reservation__input-group">
+              <label class="reservation__label" for="comensales">Número de comensales *</label>
+              <input class="reservation__input" type="number" id="comensales" name="comensales" min="1" max="8" placeholder="1-8" required />
+            </div>
+
+            <div class="reservation__input-group">
+              <label class="reservation__label" for="fecha-hora">Fecha y hora *</label>
+              <input class="reservation__input" type="datetime-local" id="fecha-hora" name="fecha-hora" required />
+            </div>
+
+            <div class="reservation__input-group">
+              <label class="reservation__label" for="email">Tu correo electrónico *</label>
+              <input class="reservation__input" type="email" id="email" name="email" placeholder="email@email.com" required />
+            </div>
+
+            <button class="reservation__button" type="submit">Reservar una mesa</button>
+
+            <label class="reservation__label-checkbox">
+              <input class="reservation__checkbox" type="checkbox" name="terminos" required />
+              <span class="reservation__checkbox-custom"></span>
+              <span class="reservation__checkbox-text">Acepto los términos de uso</span>
+            </label>
+
+          </fieldset>
+        </form>
+      </section>
+
+    </main>
+
+    <footer class="footer">
+      <div class="footer__circle" aria-hidden="true"></div>
+
+      <div class="footer__content">
+        <div class="footer__logo">
+          <img src="./img/logo_coffeeshop_dark.svg" alt="Logotipo Triple Espresso" />
+        </div>
+
+        <div class="footer__social">
+          <h3 class="footer__social-title">Redes sociales</h3>
+          <ul class="footer__social-list">
+            <li class="footer__social-item">
+              <a class="footer__social-link" href="https://facebook.com" target="_blank" rel="noopener">
+                <img class="footer__social-icon" src="./img/facebook_white.svg" alt="Icono de Facebook" /> Facebook
+              </a>
+            </li>
+            <li class="footer__social-item">
+              <a class="footer__social-link" href="https://instagram.com" target="_blank" rel="noopener">
+                <img class="footer__social-icon" src="./img/instagram_white.svg" alt="Icono de Instagram" /> Instagram
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <p class="footer__copyright">&copy; 2026 Erick Baltazar Escobar</p>
+    </footer>
   </body>
 </html>
