@@ -6,6 +6,9 @@ body {
   font-size: 16px;
   line-height: 20px;
 }
+/* ==========================================================================
+   ENCABEZADO (HEADER)
+   ========================================================================== */
 header {
   background-color: #ffffff;
   background-image: url("/img/background_header.svg ");
@@ -99,7 +102,7 @@ header {
   margin-bottom: 5px;
 }
 /* ==========================================================================
-   3. SECCIÓN: RESERVA (RESERVATION)
+   SECCIÓN: RESERVA (RESERVATION)
    ========================================================================== */
 
 .reservation {
@@ -208,7 +211,7 @@ header {
   width: 0;
 }
 
-/* Creamos la casilla visual personalizada desde cero */
+/* Casilla visual personalizada desde cero */
 .reservation__checkbox-custom {
   width: 20px;          /* Dimensiones 20x20px requeridas */
   height: 20px;
@@ -240,7 +243,7 @@ header {
 }
 
 /* ==========================================================================
-   4. PIE DE PÁGINA (FOOTER)
+   PIE DE PÁGINA (FOOTER)
    ========================================================================== */
 
 .footer {
@@ -339,7 +342,7 @@ header {
 }
 
 /* ==========================================================================
-   5. INTERACTIVIDAD: ESTADOS HOVER
+   INTERACTIVIDAD: ESTADOS HOVER
    ========================================================================== */
 
 .nav-link {
